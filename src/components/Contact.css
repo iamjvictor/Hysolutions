@@ -1,0 +1,50 @@
+.contact-social {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.instagram-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--background-light);
+  border-radius: 2rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: var(--text-light);
+}
+
+.instagram-link:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-2px);
+}
+
+.instagram-link i {
+  font-size: 1.2rem;
+}
+
+.instagram-link span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .instagram-link {
+    padding: 0.4rem 0.8rem;
+  }
+  
+  .instagram-link i {
+    font-size: 1rem;
+  }
+  
+  .instagram-link span {
+    font-size: 0.9rem;
+  }
+} 

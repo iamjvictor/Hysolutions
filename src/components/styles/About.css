@@ -1,0 +1,184 @@
+.about-hero {
+  padding: 4rem 2rem;
+  background-color: #f8f9fa;
+}
+
+.about-hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.slogan {
+  margin-bottom: 1rem;
+  text-align: center;
+  margin-top: 10rem;
+ 
+}
+
+
+  
+
+.slogan h2 {
+  font-size: 2.5rem;
+  color: #333;
+  font-weight: 700;
+  line-height: 1.2;
+  
+}
+
+.about-description {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-description p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #7f7f7f;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 3rem 1rem;
+  }
+
+  .slogan h2 {
+    font-size: 2rem;
+    font-family: DaysSansBlack;
+  }
+
+  .about-description p {
+    font-size: 1rem;
+  }
+}
+
+.about-section {
+  min-height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-dark);
+  padding-top: 80px;
+  position: relative;
+}
+
+.slogan-container {
+  width: 100%;
+  text-align: center;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.about-slogan { 
+    font-family: 'Days Sans Black', sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    background: linear-gradient(to right, #8f5e25, #fbf4a1, #8f5e25);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: none;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto 5rem;
+  padding: 0 1rem;
+  position: relative;
+}
+
+.about-left {
+  background-color: var(--secondary-dark);
+  border-radius: 8px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 250px;
+}
+
+.about-image-placeholder {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.about-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-light);
+  margin-bottom: 1rem;
+}
+
+.about-highlight {
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+@media (max-width: 968px) {
+  .about-section {
+    padding-top: 280px;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr;
+    width: 95%;
+    margin-bottom: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding-top: 300px;
+  }
+
+  .about-slogan {
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+  }
+
+  .about-container {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    padding-top: 320px;
+  }
+
+  .about-slogan {
+    font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+  }
+
+  .about-container {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}

@@ -1,0 +1,270 @@
+.consulting-section {
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--background-dark);
+    padding: 80px 0;
+    color: var(--text-light);
+    scroll-snap-align: start;
+}
+
+.consulting-header {
+    text-align: center;
+    padding: 2rem;
+    
+}
+
+.consulting-header h2 {
+    font-family: 'Days Sans Black', sans-serif;
+    font-size: 3rem;
+    line-height: 1.2;
+    text-align: center;
+    margin: 3rem;
+    background: linear-gradient(to right, #8f5e25, #fbf4a1, #8f5e25);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.consulting-header .subtitle {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Metodologia */
+.methodology-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto 4rem;
+}
+
+.methodology-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.methodology-card {
+    background-color: var(--secondary-dark);
+    padding: 2rem;
+    border-radius: 8px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.methodology-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.step-number {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 30px;
+    height: 30px;
+    background: var(--accent-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.methodology-icon {
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.methodology-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.methodology-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* Benefícios */
+.benefits-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto 4rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    position: relative;
+}
+
+.benefits-container h3 {
+    font-weight: 300;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 0 2.5rem 0;
+    background: linear-gradient(to right, #8f5e25, #fbf4a1, #8f5e25);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    opacity: 0.9;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.benefit-card {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--secondary-dark);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-icon {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+}
+
+.benefit-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.benefit-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* Call to Action */
+.cta-container {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: linear-gradient(45deg, var(--accent-color), #357abd);
+    margin-top: 4rem;
+}
+
+.cta-container h3 {
+    font-weight: 300;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-light);
+}
+
+.cta-container p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.cta-button {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    background-color: var(--text-light);
+    color: var(--accent-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .consulting-section {
+        padding: 60px 0;
+    }
+
+    .consulting-header {
+        margin-bottom: 3rem;
+    }
+
+    .consulting-header h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .methodology-container,
+    .benefits-container {
+        padding: 1.5rem;
+    }
+
+    .methodology-card,
+    .benefit-card {
+        padding: 1.5rem;
+    }
+
+    .benefits-container h3 {
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+    }
+
+    .cta-container {
+        padding: 2rem 1.5rem;
+    }
+
+    .cta-container h3 {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .consulting-section {
+        padding: 40px 0;
+    }
+
+    .consulting-header {
+        margin-bottom: 2rem;
+    }
+
+    .consulting-header h2 {
+        font-size: 1.8rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .methodology-container,
+    .benefits-container {
+        padding: 1rem;
+    }
+
+    .methodology-card,
+    .benefit-card {
+        padding: 1.25rem;
+    }
+
+    .benefits-container h3 {
+        font-size: 1.4rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .cta-container {
+        padding: 2rem 1rem;
+    }
+
+    .cta-container h3 {
+        font-size: 1.4rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .cta-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+}

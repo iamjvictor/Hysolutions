@@ -1,0 +1,186 @@
+.contact-section {
+    min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-dark);
+  padding-top: 80px;
+  overflow: hidden;
+  scroll-snap-align: start;
+}
+
+.contact-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.contact-container h2 {
+    font-family: 'Days Sans Black', sans-serif;
+    font-size: 3rem;
+    line-height: 1.2;
+    text-align: center;   
+    margin-bottom: 3rem;
+    background: linear-gradient(to right, #8f5e25, #fbf4a1, #8f5e25);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.contact-item i {
+  font-size: 1.5rem;
+  color: #0066cc;
+}
+
+.contact-item p {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.contact-social {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  justify-content: center;
+}
+.contact-social i {
+    font-size: 1.5rem;
+    color: #0066cc;
+}
+
+.contact-social p {
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.social-links a {
+  color: #0066cc;
+  font-size: 1.8rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #004999;
+}
+
+.contact-cta {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;  
+}
+
+.whatsapp-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #25D366;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.whatsapp-button i {
+  font-size: 1.3rem;
+}
+
+.whatsapp-button:hover {
+  background-color: #128C7E;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 1.5rem;
+  }
+
+  .contact-container h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-info {
+    gap: 1.5rem;
+  }
+
+  .contact-item, 
+  .contact-social {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .contact-item p,
+  .contact-social p {
+    font-size: 1.1rem;
+  }
+
+  .whatsapp-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+    padding: 1rem;
+  }
+
+  .contact-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-info {
+    gap: 1.2rem;
+  }
+
+  .contact-item i,
+  .contact-social i {
+    font-size: 1.3rem;
+  }
+
+  .contact-item p,
+  .contact-social p {
+    font-size: 1rem;
+  }
+
+  .whatsapp-button {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .whatsapp-button i {
+    font-size: 1.1rem;
+  }
+}
